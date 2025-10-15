@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Dancing+Script:wght@500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lavishly+Yours&family=Libertinus+Keyboard&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+@media all and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: "Lato", sans-serif;
+  color: #777;
+  font-size: 1rem;
+  padding: 1.875rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveinRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  max-width: 0 auto;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+[class^=col-] {
+  padding: 0 15px;
+}
+
+.col-3 {
+  width: 25%; /* 25% */
+  flex: 0 0 25%;
+  border: 1px solid #000;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  flex: 0 0 33.3333333333%;
+}
+
+.col-6 {
+  width: 50%;
+  flex: 0 0 50%;
+}
+
+.col-12 {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../images/hero.jpg);
+  height: 90vh;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  position: relative;
+}
+.header .logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: inline-block;
+  width: 85PX;
+}
+.header .logo img {
+  width: 100%;
+}
+.header .logo-text-box {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-text-box h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 15px;
+}
+
+.center-box h1 {
+  display: inline-block; /* better alignment */
+  line-height: normal; /* reset child line-height */
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 25px;
+}
+
+.center-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.center-box h1 {
+  animation: moveInLeft 1s ease-in-out;
+}
+
+.center-box h2 {
+  display: inline-block;
+  letter-spacing: 15px;
+  animation: moveinRight 1s ease-in-out;
+}
+
+.btn, .btn:link, .btn:visited, .header-btn {
+  padding: 12px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #6cffdd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn:hover, .btn:link:hover, .btn:visited:hover, .header-btn:hover {
+  background-color: #1aff00;
+}
+
+/*# sourceMappingURL=style.css.map */

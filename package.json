@@ -1,0 +1,14 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "UI with Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass:assets/css"
+  },
+  "author": "vishnu",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}
